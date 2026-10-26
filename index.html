@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apprends HTML et CSS gratuitement avec des cours et des exercices.">
+  <title>CodeAcademy - Apprendre HTML & CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#accueil" class="logo">
+      <span class="logo-icon">&lt;/&gt;</span>
+      Code<span>Academy</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false">☰</button>
+
+    <nav id="navigation">
+      <a href="#accueil">Accueil</a>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#exercices">Exercices</a>
+      <button id="themeBtn" class="theme-btn"
+        aria-label="Changer le thème">☀️</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <span class="tag">🚀 Formation 100% gratuite</span>
+        <h1>Apprends à créer
+          <span>tes propres sites web.</span>
+        </h1>
+        <p>
+          Découvre les bases du HTML et du CSS,
+          étape par étape, avec des explications
+          simples, des exemples et des exercices.
+        </p>
+        <div class="hero-actions">
+          <a href="#html" class="btn primary">
+            Commencer à apprendre →
+          </a>
+          <a href="#cours" class="btn secondary">
+            Voir les cours
+          </a>
+        </div>
+      </div>
+      <div class="hero-code">
+        <div class="code-top">
+          <span>● ● ●</span>
+          <span>index.html</span>
+        </div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Mon site&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Bonjour ! 👋&lt;/h1&gt;
+    &lt;p&gt;Je développe !&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+    </section>
+
+    <section id="cours" class="section">
+      <div class="section-heading">
+        <span class="eyebrow">TON PARCOURS</span>
+        <h2>Choisis ta formation</h2>
+        <p>Deux technologies essentielles pour créer un site web.</p>
+      </div>
+
+      <div class="course-grid">
+        <a href="#html" class="course-card">
+          <div class="course-icon html-icon">HTML</div>
+          <span class="level">Débutant</span>
+          <h3>Les bases du HTML</h3>
+          <p>Apprends à structurer une page avec des titres,
+            textes, images, liens, listes et formulaires.</p>
+          <span class="course-link">Découvrir le cours →</span>
+        </a>
+
+        <a href="#css" class="course-card">
+          <div class="course-icon css-icon">CSS</div>
+          <span class="level">Débutant</span>
+          <h3>Les bases du CSS</h3>
+          <p>Découvre les couleurs, les polices,
+            les espacements, Flexbox et le responsive.</p>
+          <span class="course-link">Découvrir le cours →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="html" class="section lessons">
+      <div class="section-heading">
+        <span class="eyebrow">FORMATION 01</span>
+        <h2>🟠 Apprendre le HTML</h2>
+        <p>HTML signifie HyperText Markup Language.
+          Il sert à organiser le contenu d'une page web.</p>
+      </div>
+
+      <article class="lesson">
+        <span class="lesson-number">01</span>
+        <h3>Qu'est-ce que le HTML ?</h3>
+        <p>
+          Le HTML est un langage de balisage.
+          Il permet de placer des titres, paragraphes,
+          images, liens et autres éléments dans une page.
+          Ce n'est pas un langage de programmation.
+        </p>
+        <p>
+          Une balise possède généralement une ouverture
+          et une fermeture. Par exemple :
+        </p>
+        <pre><code>&lt;p&gt;Bonjour le monde !&lt;/p&gt;</code></pre>
+        <p>
+          La balise &lt;p&gt; indique un paragraphe.
+          Le navigateur affiche son contenu comme du texte.
+        </p>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">02</span>
+        <h3>La structure d'une page HTML</h3>
+        <p>
+          Chaque page commence par une déclaration de type.
+          La partie head contient les informations de la page.
+          La partie body contient ce que voit le visiteur.
+        </p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Ma première page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Bienvenue !&lt;/h1&gt;
+  &lt;p&gt;Voici mon premier site.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">03</span>
+        <h3>Les titres et les paragraphes</h3>
+        <p>
+          HTML propose six niveaux de titres :
+          h1, h2, h3, h4, h5 et h6.
+          h1 est le titre principal, et h6 le niveau
+          le moins important.
+        </p>
+        <pre><code>&lt;h1&gt;Titre principal&lt;/h1&gt;
+&lt;h2&gt;Sous-titre&lt;/h2&gt;
+&lt;h3&gt;Petite section&lt;/h3&gt;
+&lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+&lt;strong&gt;Texte important&lt;/strong&gt;
+&lt;em&gt;Texte mis en valeur&lt;/em&gt;</code></pre>
+        <div class="result">
+          <h3>Titre principal (exemple)</h3>
+          <p>Ceci est un paragraphe.</p>
+          <strong>Texte important</strong>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">04</span>
+        <h3>Les liens et les images</h3>
+        <p>
+          La balise a crée un lien. L'attribut href
+          précise sa destination. La balise img
+          affiche une image et son attribut alt
+          fournit une description.
+        </p>
+        <pre><code>&lt;a href="https://example.com"&gt;
+  Visiter un site
+&lt;/a&gt;
+
+&lt;img src="photo.jpg"
+     alt="Un paysage de montagne"&gt;</code></pre>
+        <p>
+          Attention : photo.jpg doit exister
+          dans le dossier indiqué.
+          La balise img n'a pas de fermeture.
+        </p>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">05</span>
+        <h3>Les listes HTML</h3>
+        <p>
+          Une liste ul contient des éléments à puces.
+          Une liste ol contient des éléments numérotés.
+          Chaque élément utilise la balise li.
+        </p>
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Créer un fichier&lt;/li&gt;
+  &lt;li&gt;Écrire le HTML&lt;/li&gt;
+  &lt;li&gt;Ouvrir le navigateur&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">06</span>
+        <h3>Les formulaires</h3>
+        <p>
+          Les formulaires permettent de saisir des données.
+          input crée un champ, label décrit ce champ
+          et button crée un bouton.
+        </p>
+        <pre><code>&lt;form&gt;
+  &lt;label for="prenom"&gt;Prénom :&lt;/label&gt;
+  &lt;input id="prenom"
+         type="text"
+         name="prenom"
+         required&gt;
+  &lt;button type="submit"&gt;
+    Envoyer
+  &lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        <p>
+          Un formulaire ne stocke pas automatiquement
+          les données : il faut un traitement adapté.
+        </p>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">07</span>
+        <h3>Les balises sémantiques</h3>
+        <p>
+          Elles donnent du sens aux différentes parties
+          d'une page et facilitent son organisation.
+        </p>
+        <pre><code>&lt;header&gt;En-tête du site&lt;/header&gt;
+&lt;nav&gt;Navigation&lt;/nav&gt;
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;h2&gt;Une section&lt;/h2&gt;
+    &lt;article&gt;Un article&lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;Pied de page&lt;/footer&gt;</code></pre>
+      </article>
+    </section>
+
+    <section id="css" class="section lessons">
+      <div class="section-heading">
+        <span class="eyebrow">FORMATION 02</span>
+        <h2>🔵 Apprendre le CSS</h2>
+        <p>CSS signifie Cascading Style Sheets.
+          Il sert à personnaliser l'apparence du HTML.</p>
+      </div>
+
+      <article class="lesson">
+        <span class="lesson-number">01</span>
+        <h3>Qu'est-ce que le CSS ?</h3>
+        <p>
+          HTML construit la structure d'une page.
+          CSS permet de modifier les couleurs,
+          les tailles, les espacements et les positions.
+        </p>
+        <pre><code>/* Ceci est un commentaire CSS */
+p {
+  color: blue;
+  font-size: 18px;
+}</code></pre>
+        <p>
+          Ici, p est le sélecteur, color est une propriété
+          et blue est sa valeur.
+        </p>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">02</span>
+        <h3>Relier HTML et CSS</h3>
+        <p>
+          La méthode recommandée consiste à utiliser
+          un fichier CSS externe. Dans le head du HTML :
+        </p>
+        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+        <p>
+          Ensuite, dans style.css, tu peux écrire :
+        </p>
+        <pre><code>body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}</code></pre>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">03</span>
+        <h3>Les couleurs et les fonds</h3>
+        <p>
+          color change la couleur du texte.
+          background-color change le fond.
+          On peut utiliser des noms ou des codes hexadécimaux.
+        </p>
+        <pre><code>h1 {
+  color: #6366f1;
+}
+
+.card {
+  background-color: #e0e7ff;
+  border: 2px solid #6366f1;
+  border-radius: 12px;
+}</code></pre>
+        <div class="result">
+          <div class="demo-color">
+            Voici une carte colorée !
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">04</span>
+        <h3>Les polices et les textes</h3>
+        <p>
+          font-family définit la police,
+          font-size la taille, font-weight l'épaisseur
+          et text-align l'alignement.
+        </p>
+        <pre><code>h1 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  line-height: 1.7;
+}</code></pre>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">05</span>
+        <h3>Margin, padding et border</h3>
+        <p>
+          Chaque élément possède un modèle de boîte.
+          padding crée de l'espace à l'intérieur,
+          margin crée de l'espace à l'extérieur
+          et border ajoute une bordure.
+        </p>
+        <pre><code>.boite {
+  margin: 20px;
+  padding: 25px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}</code></pre>
+        <div class="result">
+          <div class="demo-box">
+            Contenu avec padding et bordure
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">06</span>
+        <h3>Les classes et les identifiants</h3>
+        <p>
+          Une classe se sélectionne avec un point.
+          Un identifiant se sélectionne avec un #.
+          Une même classe peut être utilisée plusieurs fois,
+          tandis qu'un identifiant doit être unique.
+        </p>
+        <pre><code>/* HTML */
+&lt;p class="important"&gt;Bonjour&lt;/p&gt;
+&lt;h2 id="titre"&gt;Mon titre&lt;/h2&gt;
+
+/* CSS */
+.important {
+  color: red;
+}
+
+#titre {
+  font-size: 28px;
+}</code></pre>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">07</span>
+        <h3>Flexbox : aligner les éléments</h3>
+        <p>
+          Flexbox facilite l'alignement des éléments
+          sur une ligne ou une colonne.
+          gap définit l'espace entre les éléments.
+        </p>
+        <pre><code>.conteneur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}</code></pre>
+        <div class="result">
+          <div class="demo-flex">
+            <span>Bloc 1</span>
+            <span>Bloc 2</span>
+            <span>Bloc 3</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">08</span>
+        <h3>CSS Grid : créer une grille</h3>
+        <p>
+          Grid permet de disposer facilement plusieurs
+          éléments en lignes et en colonnes.
+        </p>
+        <pre><code>.grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}</code></pre>
+        <p>
+          La valeur 1fr représente une fraction
+          de l'espace disponible.
+        </p>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">09</span>
+        <h3>Le responsive design</h3>
+        <p>
+          Un site responsive s'adapte aux écrans
+          d'ordinateur, de tablette et de téléphone.
+          Les media queries appliquent des règles
+          selon la taille de l'écran.
+        </p>
+        <pre><code>.grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+  .grille {
+    grid-template-columns: 1fr;
+  }
+}</code></pre>
+      </article>
+
+      <article class="lesson">
+        <span class="lesson-number">10</span>
+        <h3>Les animations et transitions</h3>
+        <p>
+          transition permet de rendre les changements
+          de style plus fluides, notamment au survol.
+        </p>
+        <pre><code>.bouton {
+  background: #6366f1;
+  transition: transform 0.3s,
+              background 0.3s;
+}
+
+.bouton:hover {
+  background: #4338ca;
+  transform: translateY(-4px);
+}</code></pre>
+        <div class="result">
+          <button class="demo-button">
+            Survole-moi !
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <section id="exercices" class="section">
+      <div class="section-heading">
+        <span class="eyebrow">À TON TOUR</span>
+        <h2>🧠 Teste tes connaissances</h2>
+        <p>Réponds aux questions pour vérifier
+          ce que tu as appris.</p>
+      </div>
+
+      <div class="quiz" id="quiz">
+        <div class="quiz-header">
+          <span id="questionCount">Question 1 / 6</span>
+          <span id="score">Score : 0</span>
+        </div>
+        <div class="progress-track">
+          <div id="progressBar"></div>
+        </div>
+        <h3 id="questionText"></h3>
+        <div id="answers" class="answers"></div>
+        <p id="feedback" aria-live="polite"></p>
+        <button id="nextBtn" class="btn primary" hidden>
+          Question suivante →
+        </button>
+        <button id="restartBtn" class="btn primary" hidden>
+          Recommencer
+        </button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="final-banner">
+        <h2>Prêt à créer ton premier site ? 🚀</h2>
+        <p>
+          Entraîne-toi régulièrement et crée
+          tes propres projets HTML et CSS.
+        </p>
+        <a href="#accueil" class="btn primary">
+          Retour en haut ↑
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 CodeAcademy — Apprendre le Web</p>
+    <p>Créé avec ❤️ en HTML, CSS et JavaScript.</p>
+  </footer>
+
+</body>
+</html>
+
